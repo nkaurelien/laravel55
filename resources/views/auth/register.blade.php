@@ -60,8 +60,21 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
+                        <div class="form-group{{ $errors->has('g-recaptcha-response') ? ' has-error' : '' }}">
+                            <label for="" class="col-md-4 control-label">Are you human?</label>
+
+                            <div class="col-md-6">
+                                
+                                {!! Recaptcha::render([ 'lang' => App::getLocale() ]) !!}
+
+                                @if ($errors->has('g-recaptcha-response'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
                         <div class="form-group">
-                            {!! Recaptcha::render([ 'lang' => App::getLocale() ]) !!}
                         </div>
 
                         <div class="form-group">

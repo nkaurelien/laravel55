@@ -1,10 +1,26 @@
-# Initialisation
+# Initialisation du projet
+
+## Cloner le projet
 
 ## Generer une nouvelle cle du nouveau projet
 
-'''
+```php
 php artisan key:generate
-'''
+```
+
+
+## Preparer l'administration
+
+### creer un nouvel adminitrateur
+
+```php
+php artisan voyager:install
+php artisan voyager:admin your@email.com --create
+```
+
+## [Obtenir](https://www.google.com/recaptcha/admin#site/340617894?setup
+) mettre de nouvelles cles, une privee et une autre publique pour recaptcha
+
 
 
 # Les Presets
@@ -22,15 +38,14 @@ php artisan key:generate
 - [reCaptcha for Laravel, generateur de uuid](https://github.com/greggilbert/recaptcha).
 - [Guzzle, requetes http serveur/serveur](https://github.com/guzzle/guzzle).
 - [JWT, travail avec les Json Web Token](https://github.com/lcobucci/jwt).
+- [Voyager, admin pour laravel ](https://github.com/the-control-group/voyager).
 
 # TODO
 
-- run php artisan vendor:publish --provider="Greggilbert\Recaptcha\RecaptchaServiceProvider".
 - Ajouter les libraries suivantes:
 	- [Intervention Image, travailler les images uploader](https://github.com/Intervention/image).
-	- [Laradrop, travailler les images uploader](https://github.com/jasekz/laradrop).
-	- [Voyager, admin pour laravel](https://github.com/the-control-group/voyager).
-	*	
+	- [Laradrop,  gestionnaire de telechargement d'image pour laravel](https://github.com/jasekz/laradrop).
+		*	
 
 
 ```json
@@ -47,7 +62,6 @@ php artisan key:generate
        "laravelcollective/html": "^5.4.0",
        "mercuryseries/flashy": "^1.0",
        "predis/predis": "^1.1",
-       "rap2hpoutre/laravel-log-viewer": "^0.13.0",
        "spatie/laravel-activitylog": "^2.5",
        "yajra/laravel-datatables-oracle": "^8.4",
        "zizaco/entrust": "5.2.x-dev"
