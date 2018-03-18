@@ -11,14 +11,21 @@ php artisan key:generate
 
 * L' echafaudage de l'Auth a ete generer
 * Echaffaudage pour react et vue et restructuration de dossier <b>resources/assets/js<b>
+* Ajout et configuation du Captcha sur la page d'inscription
+
 
 # Les vendors
 
 - [Carbon, les dates](https://github.com/briannesbitt/Carbon).
 - [Debugbar, la barre de deboggae et de trace](https://github.com/barryvdh/laravel-debugbar).
+- [Laravel UUID, generateur de uuid](https://github.com/webpatser/laravel-uuid).
+- [reCaptcha for Laravel, generateur de uuid](https://github.com/greggilbert/recaptcha).
+- [Guzzle, requetes http serveur/serveur](https://github.com/guzzle/guzzle).
+- [JWT, travail avec les Json Web Token](https://github.com/lcobucci/jwt).
 
 # TODO
 
+- run php artisan vendor:publish --provider="Greggilbert\Recaptcha\RecaptchaServiceProvider".
 - Ajouter les libraries suivantes:
 	*	
 

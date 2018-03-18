@@ -180,6 +180,7 @@ return [
 
         /* ADDITIONS */
         Barryvdh\Debugbar\ServiceProvider::class,
+        // Greggilbert\Recaptcha\RecaptchaServiceProvider::class,
 
     ],
 
@@ -231,7 +232,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         /* ADDITIONS */
-        'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        // 'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        // 'Recaptcha' => Greggilbert\Recaptcha\Facades\Recaptcha::class,
     ],
 
 ];
