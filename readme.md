@@ -27,6 +27,8 @@ php artisan key:generate
 
 - run php artisan vendor:publish --provider="Greggilbert\Recaptcha\RecaptchaServiceProvider".
 - Ajouter les libraries suivantes:
+	- [Intervention Image, travailler les images uploader](https://github.com/Intervention/image).
+	- [Laradrop, travailler les images uploader](https://github.com/jasekz/laradrop).
 	*	
 
 
