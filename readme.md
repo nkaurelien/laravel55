@@ -10,6 +10,7 @@ php artisan key:generate
 # Les Presets
 
 * L' echafaudage de l'Auth a ete generer
+* Echaffaudage pour react et vue et restructuration de dossier <b>resources/assets/js<b>
 
 
 
