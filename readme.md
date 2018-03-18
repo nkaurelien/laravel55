@@ -29,7 +29,31 @@ php artisan key:generate
 - Ajouter les libraries suivantes:
 	- [Intervention Image, travailler les images uploader](https://github.com/Intervention/image).
 	- [Laradrop, travailler les images uploader](https://github.com/jasekz/laradrop).
+	- [Voyager, admin pour laravel](https://github.com/the-control-group/voyager).
 	*	
+
+
+```json
+
+{
+    "require": {
+       "barryvdh/laravel-translation-manager": "^0.4.2",
+       "creativeorange/gravatar": "^1.0",
+       "davejamesmiller/laravel-breadcrumbs": "4.*",
+       "elasticsearch/elasticsearch": "^6.0",
+       "hieu-le/active": "^3.5",
+       "laravel/browser-kit-testing": "1.*",
+       "laravel/socialite": "^3.0",
+       "laravelcollective/html": "^5.4.0",
+       "mercuryseries/flashy": "^1.0",
+       "predis/predis": "^1.1",
+       "rap2hpoutre/laravel-log-viewer": "^0.13.0",
+       "spatie/laravel-activitylog": "^2.5",
+       "yajra/laravel-datatables-oracle": "^8.4",
+       "zizaco/entrust": "5.2.x-dev"
+    }
+}
+```
 
 
 
